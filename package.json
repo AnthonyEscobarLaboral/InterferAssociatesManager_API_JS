@@ -1,0 +1,40 @@
+{
+  "name": "interferassociatesmanager_api_js",
+  "version": "1.0.0",
+  "description": "💡Esta API robusta con solo backend utilizando Node.js, Express y MongoDB desarrolla una solución eficiente y moderna para gestionar la incorporación de\r nuevos socios y empresas a su famosa feria “Interfer”, la cual les permitirá a las empresas registrar sus datos e información crucial , además, de la generación de reportes en formato Excel con toda la información de las empresas registradas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyEscobarLaboral/InterferAssociatesManager_API_JS.git"
+  },
+  "keywords": [],
+  "author": "Anthony Josue Escobar Ponce",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AnthonyEscobarLaboral/InterferAssociatesManager_API_JS/issues"
+  },
+  "homepage": "https://github.com/AnthonyEscobarLaboral/InterferAssociatesManager_API_JS#readme",
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "interferassociatesmanager_api_js": "file:",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
