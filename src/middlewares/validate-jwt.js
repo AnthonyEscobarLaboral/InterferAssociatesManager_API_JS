@@ -1,0 +1,36 @@
+import jwt from "jsonwebtoken";
+import User from "../user/user.model.js"
+
+export const validateJWT = async (req,res,next)=>{
+    try{
+        let token = req.body.token || req.query.token || req.headers["authorization"]
+
+        if(!token){
+            return res.status(400).json({
+                succes:false,
+                message: "There is no token in your request"
+            })
+        }
+
+        token = token.replace(/^Bearer\s+/, "")
+ 
+        const {uid} = jwt.verify(token,process.env.SECRETORPRIVATEKEY)
+        const userFound = await User.findById(uid)
+        if(!userFound){
+            return res.status(400).json({
+                succes: false,
+                message: "User not found"
+            })
+        }
+
+        req.userJwt = userFound;
+        next();
+
+    }catch(err){
+        return res.status(500).json({
+            succes: false,
+            message: "Invalid token",
+            error: err.message
+        })
+    }
+}

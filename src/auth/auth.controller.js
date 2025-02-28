@@ -1,4 +1,4 @@
-import { hash, verify } from "argon2";
+import { verify } from "argon2";
 import User from "../user/user.model.js";
 import { generateJWT } from "../helpers/generate-jwt.js";
 
