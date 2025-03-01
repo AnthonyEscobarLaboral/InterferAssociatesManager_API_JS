@@ -12,7 +12,7 @@ const companySchema = Schema({
         required: [true, "Company category is required"]
     },
     location: {
-        type: Number,
+        type: String,
         required: [true, "Locations address is required"],
         unique: true
     },

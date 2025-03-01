@@ -23,7 +23,7 @@ export const login = async (req, res) => {
                 error: "the password you provided its incorrect,try again"
             })
         }
-        const token = await generateJWT(user._id)
+        const token = await generateJWT(administrator._id)
         
         return res.status(200).json({
             message: "Login successful",

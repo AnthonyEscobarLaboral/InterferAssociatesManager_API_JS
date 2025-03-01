@@ -1,6 +1,7 @@
 import Company from "../company/company.model.js";
 import ExcelJS from "exceljs";
-import path from "path";
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 import fs from "fs";
 
 export const registerCompany = async (req, res) => {
@@ -69,13 +70,12 @@ export const companiesReportGenerator = async (req, res) => {
             });
         });
 
-        const reportDirectory = path.join(__dirname, 'public', 'uploads', 'reports');
+        const rootDir = process.cwd();
 
-        if (!fs.existsSync(reportDirectory)) {
-            fs.mkdirSync(reportDirectory, { recursive: true }); // Crear subdirectorios si no existen
-        }
+        const reportDirectory = join(rootDir, 'public', 'uploads', 'reports');
 
-        const filePath = path.join(reportDirectory, 'companiesReport.xlsx');
+        const filePath = join(reportDirectory, 'companiesReport.xlsx');
+
 
         if (fs.existsSync(filePath)) {
             fs.unlinkSync(filePath);
@@ -108,7 +108,7 @@ export const editCompany = async (req, res) => {
         if (typeof companyReceived.creation !== 'number' || companyReceived.creation < 1850 || companyReceived.creation >= editionYear) {
             return res.status(400).json({
                 success: false,
-                message: "creation year of the company needs to be a number & a valid year"
+                message: "creation year of the company needs to be a number or/and a valid year not post actual year"
             });
         };
 

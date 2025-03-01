@@ -32,7 +32,7 @@ export const usernameFound = async (username = "") => {
 
 export const companyFound = async (name = "") => {
     const found = await Company.findOne({name})
-    if(!found){
+    if(found){
         throw new Error(`The company provided: ${name} is already registered`)
     }
 }

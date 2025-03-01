@@ -50,7 +50,7 @@ export const defaultAdminAccount = async () => {
         defaultAdmin.password = encryptedPassword;
         await User.create(defaultAdmin);
 
-        return console.log(`Administrator account created succesfully:`);
+        return console.log(`Administrator account created succesfully`);
 
     } catch (err) {
         return console.error(`Error creating default Administrator account:${err}`);

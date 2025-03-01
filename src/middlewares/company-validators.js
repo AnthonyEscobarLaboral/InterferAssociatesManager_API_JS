@@ -29,7 +29,7 @@ export const editCompanyValidator = [
     validateJWT,
     param("cid").isMongoId().withMessage("The id provided is not vali"),
     param("cid").custom(companyExists),
-    body("name").optional().custom(companyFound),
+    body("name").optional(),
     body("location").optional(),
     body("impact").optional().custom(impactFound),
     body("category").optional().custom(categoryFound),

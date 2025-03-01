@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "0fb0b3de-cb13-47d7-8ee4-d4c008592fcc",
+		"name": "InterferAssociatesManager_ENDPOINTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37668756"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"becheverria@gmail.com\",\r\n  \"username\": \"becheverria\",\r\n  \"password\": \"AdminPass@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3001/InterferAssociatesManager/v1/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Register company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyNmQwODFmNDdlY2U1ZGI0ZGFjMzEiLCJpYXQiOjE3NDA3OTUyMTIsImV4cCI6MTc0MDc5ODgxMn0.077uOpB4uvGHWfQ24ZmWmNwuptjmvA2TC9YRk4TLVNk"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"SecureFinance Group\",\r\n  \"category\": \"Finance\",\r\n  \"location\": \"Calle Seguridad 55, Distrito Bancario\",\r\n  \"creation\": 2021,\r\n  \"impact\": \"MEDIUM\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3001/InterferAssociatesManager/v1/company/registerCompany"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyNmQwODFmNDdlY2U1ZGI0ZGFjMzEiLCJpYXQiOjE3NDA3OTUyMTIsImV4cCI6MTc0MDc5ODgxMn0.077uOpB4uvGHWfQ24ZmWmNwuptjmvA2TC9YRk4TLVNk"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"World wide tech\",\r\n  \"category\": \"Thecnology\",\r\n  \"location\": \"zona 16 avenida petapa calle 32-33\",\r\n  \"creation\": 2005,\r\n  \"impact\": \"LOW\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3001/InterferAssociatesManager/v1/company/editCompany/67c26f13a57b8543be7d7b82"
+					},
+					"response": []
+				},
+				{
+					"name": "companies reports",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyNmQwODFmNDdlY2U1ZGI0ZGFjMzEiLCJpYXQiOjE3NDA3OTkzNzIsImV4cCI6MTc0MDgwMjk3Mn0.Wsf7ZOogZYwGfqIZiglEMDm0qa_JiwmVYuKCGzLAmnM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"order\": \"A-Z\",\r\n  \"category\": \"Thecnology\",\r\n  \"yearsInBusiness\": 20,\r\n  \"impact\": \"LOW\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3001/InterferAssociatesManager/v1/company/companiesReport"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
