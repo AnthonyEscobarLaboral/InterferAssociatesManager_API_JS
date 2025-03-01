@@ -8,3 +8,6 @@ nuevos socios y empresas a su famosa feria “Interfer”, la cual les permitir�
 * 🔑 "email": "becheverria@gmail.com",
 * 🔑 "username": "becheverria",
 * 🔑 "password": "AdminPass@123"
+
+## 🌐 URL documentacion en Swagger:
+* 💻 http://localhost:3001/api-docs

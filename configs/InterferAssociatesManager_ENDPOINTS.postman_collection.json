@@ -23,7 +23,7 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3001/InterferAssociatesManager/v1/auth/login"
+						"url": "http://127.0.0.1:3001/interferAssociatesManager/v1/auth/login"
 					},
 					"response": []
 				}
@@ -52,7 +52,7 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3001/InterferAssociatesManager/v1/company/registerCompany"
+						"url": "http://127.0.0.1:3001/interferAssociatesManager/v1/company/registerCompany"
 					},
 					"response": []
 				},
@@ -76,7 +76,7 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3001/InterferAssociatesManager/v1/company/editCompany/67c26f13a57b8543be7d7b82"
+						"url": "http://127.0.0.1:3001/interferAssociatesManager/v1/company/editCompany/67c26f13a57b8543be7d7b82"
 					},
 					"response": []
 				},
@@ -103,7 +103,7 @@
 								}
 							}
 						},
-						"url": "http://127.0.0.1:3001/InterferAssociatesManager/v1/company/companiesReport"
+						"url": "http://127.0.0.1:3001/interferAssociatesManager/v1/company/companiesReport"
 					},
 					"response": []
 				}

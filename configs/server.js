@@ -20,8 +20,8 @@ const configs = (app) => {
 }
 
 const routes = (app) =>{
-    app.use("/InterferAssociatesManager/v1/auth", authRoutes)
-    app.use("/InterferAssociatesManager/v1/company", companyRoutes)
+    app.use("/interferAssociatesManager/v1/auth", authRoutes)
+    app.use("/interferAssociatesManager/v1/company", companyRoutes)
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 }
 
