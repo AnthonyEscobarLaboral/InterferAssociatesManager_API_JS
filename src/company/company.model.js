@@ -4,7 +4,8 @@ const companySchema = Schema({
     name: {
         type: String,
         required: [true, "Company name is required"],
-        maxLength: [100, "Company name cannot exceed 100 characters"]
+        maxLength: [100, "Company name cannot exceed 100 characters"],
+        unique: true
     },
     category: {
         type: String,
@@ -12,7 +13,8 @@ const companySchema = Schema({
     },
     location: {
         type: Number,
-        required: [true, "Company locations address is required"]
+        required: [true, "Locations address is required"],
+        unique: true
     },
     creation: {
         type: Number,
@@ -25,11 +27,7 @@ const companySchema = Schema({
     },
     yearsInBusiness: {
         type: Number
-    },
-    status: {
-        type: Boolean,
-        default: true
-    },
+    }
 },
     {
         versionKey: false,

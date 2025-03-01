@@ -7,6 +7,7 @@ import morgan from "morgan";
 import User from "../src/user/user.model.js";
 import { dbConnection } from "./dbMongoConnection.js";
 import authRoutes from "../src/auth/auth.routes.js";
+import companyRoutes from "../src/company/company.routes.js";
 import { swaggerDocs, swaggerUi } from "./swagger.js";
 
 
@@ -20,6 +21,7 @@ const configs = (app) => {
 
 const routes = (app) =>{
     app.use("/InterferAssociatesManager/v1/auth", authRoutes)
+    app.use("/InterferAssociatesManager/v1/company", companyRoutes)
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 }
 

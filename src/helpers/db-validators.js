@@ -1,4 +1,5 @@
-import User from "../user/user.model.js"
+import User from "../user/user.model.js";
+import Company from "../company/company.model.js";
 
 export const emailExists = async (email = "") => {
     const exists = await User.findOne({email})
@@ -26,6 +27,34 @@ export const usernameFound = async (username = "") => {
     const found = await User.findOne({username})
     if(!found){
         throw new Error(`The username provided: ${username} does not exists nor it could be found`)
+    }
+}
+
+export const companyFound = async (name = "") => {
+    const found = await Company.findOne({name})
+    if(!found){
+        throw new Error(`The company provided: ${name} is already registered`)
+    }
+}
+
+export const impactFound = async (impact = "") => {
+    const found = await Company.findOne({impact})
+    if(!found){
+        throw new Error(`Companies with ${name} impact could not be found`)
+    }
+}
+
+export const categoryFound = async (category = "") => {
+    const found = await Company.findOne({category})
+    if(!found){
+        throw new Error(`Companies with category: ${category} could not be found`)
+    }
+}
+
+export const yearsFound = async (yearsInBusiness = "") => {
+    const found = await Company.findOne({yearsInBusiness})
+    if(!found){
+        throw new Error(`Companies with years of experience: ${yearsInBusiness} could not be found`)
     }
 }
 
