@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "67c26d081f47ece5db4dac31"
+  },
+  "completeName": "Braulio Jose Echeverria Montufar",
+  "email": "becheverria@gmail.com",
+  "username": "becheverria",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$8NRhEeCAVMBDR4RwigGU8g$oJbh6HkJ+eBCKXwROL/V3GsRBRNx5yHkZHN4ibabENk",
+  "role": "ADMIN",
+  "createdAt": {
+    "$date": "2025-03-01T02:12:24.747Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:12:24.747Z"
+  }
+}]

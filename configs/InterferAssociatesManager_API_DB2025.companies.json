@@ -1,0 +1,374 @@
+[{
+  "_id": {
+    "$oid": "67c26f13a57b8543be7d7b82"
+  },
+  "name": "World wide tech",
+  "category": "Technology",
+  "location": "zona 16 avenida petapa calle 32-33",
+  "creation": 2005,
+  "impact": "HIGH",
+  "yearsInBusiness": 20,
+  "createdAt": {
+    "$date": "2025-03-01T02:21:07.848Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:40:14.079Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27006a57b8543be7d7b86"
+  },
+  "name": "Digital net",
+  "category": "Technology",
+  "location": "zona 22 avenida rafael landivar calle 60-34",
+  "creation": 2006,
+  "impact": "MEDIUM",
+  "yearsInBusiness": 19,
+  "createdAt": {
+    "$date": "2025-03-01T02:25:10.746Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:25:10.746Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27012a57b8543be7d7b8a"
+  },
+  "name": "ByteCore Solutions",
+  "category": "Technology",
+  "location": "Avenida de la Innovación 45, Ciudad Tech",
+  "creation": 2011,
+  "impact": "HIGH",
+  "yearsInBusiness": 14,
+  "createdAt": {
+    "$date": "2025-03-01T02:25:22.545Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:25:22.545Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c2701ba57b8543be7d7b8e"
+  },
+  "name": "NeuroTech Innovations",
+  "category": "Technology",
+  "location": "Calle 25, Zona de Investigación, Ciudad Nova",
+  "creation": 2015,
+  "impact": "MEDIUM",
+  "yearsInBusiness": 10,
+  "createdAt": {
+    "$date": "2025-03-01T02:25:31.812Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:25:31.812Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27025a57b8543be7d7b92"
+  },
+  "name": "BioVita Labs",
+  "category": "Health",
+  "location": "Avenida Salud 12, Distrito Med",
+  "creation": 2009,
+  "impact": "HIGH",
+  "yearsInBusiness": 16,
+  "createdAt": {
+    "$date": "2025-03-01T02:25:41.672Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:25:41.672Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c2702fa57b8543be7d7b96"
+  },
+  "name": "MedSolutions Global",
+  "category": "Health",
+  "location": "Calle San Pedro 83, Área Médica Central",
+  "creation": 2013,
+  "impact": "LOW",
+  "yearsInBusiness": 12,
+  "createdAt": {
+    "$date": "2025-03-01T02:25:51.910Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:25:51.910Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27039a57b8543be7d7b9a"
+  },
+  "name": "EcoPower Systems",
+  "category": "Energy",
+  "location": "Carretera 10, Sector Verde, EcoCity",
+  "creation": 2014,
+  "impact": "HIGH",
+  "yearsInBusiness": 11,
+  "createdAt": {
+    "$date": "2025-03-01T02:26:01.929Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:26:01.929Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27044a57b8543be7d7b9e"
+  },
+  "name": "SolarFlare Technologies",
+  "category": "Energy",
+  "location": "Calle Energía 45, Zona Solar",
+  "creation": 2017,
+  "impact": "MEDIUM",
+  "yearsInBusiness": 8,
+  "createdAt": {
+    "$date": "2025-03-01T02:26:12.610Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:26:12.610Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27052a57b8543be7d7ba2"
+  },
+  "name": "UrbanDrive Motors",
+  "category": "Transportation",
+  "location": "Avenida Transporte 67, Ciudad de la Movilidad",
+  "creation": 2010,
+  "impact": "HIGH",
+  "yearsInBusiness": 15,
+  "createdAt": {
+    "$date": "2025-03-01T02:26:26.903Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:26:26.903Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27059a57b8543be7d7ba6"
+  },
+  "name": "FlyWay Transit",
+  "category": "Transportation",
+  "location": "Calle 85, Aeropuerto Global",
+  "creation": 2016,
+  "impact": "MEDIUM",
+  "yearsInBusiness": 9,
+  "createdAt": {
+    "$date": "2025-03-01T02:26:33.390Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:26:33.390Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27068a57b8543be7d7baa"
+  },
+  "name": "WealthBridge Finance",
+  "category": "Finance",
+  "location": "Avenida Finanzas 9, Distrito Económico",
+  "creation": 2008,
+  "impact": "HIGH",
+  "yearsInBusiness": 17,
+  "createdAt": {
+    "$date": "2025-03-01T02:26:48.159Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:26:48.159Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c2707ca57b8543be7d7bae"
+  },
+  "name": "SafeTrust Bank",
+  "category": "Finance",
+  "location": "Calle 34, Zona Bancaria Central",
+  "creation": 2014,
+  "impact": "LOW",
+  "yearsInBusiness": 11,
+  "createdAt": {
+    "$date": "2025-03-01T02:27:08.166Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:27:08.166Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c270c1a57b8543be7d7bb2"
+  },
+  "name": "Quantum Leap Systems",
+  "category": "Technology",
+  "location": "Calle 88, Zona Digital",
+  "creation": 2020,
+  "impact": "HIGH",
+  "yearsInBusiness": 5,
+  "createdAt": {
+    "$date": "2025-03-01T02:28:17.800Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:28:17.800Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c270caa57b8543be7d7bb6"
+  },
+  "name": "TechSphere Innovations",
+  "category": "Technology",
+  "location": "Avenida Innovación 45, Ciudad Tech",
+  "creation": 2014,
+  "impact": "MEDIUM",
+  "yearsInBusiness": 11,
+  "createdAt": {
+    "$date": "2025-03-01T02:28:26.591Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:28:26.591Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c270d3a57b8543be7d7bba"
+  },
+  "name": "MedCore Health",
+  "category": "Health",
+  "location": "Avenida Salud 15, Centro Médico",
+  "creation": 2012,
+  "impact": "HIGH",
+  "yearsInBusiness": 13,
+  "createdAt": {
+    "$date": "2025-03-01T02:28:35.406Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:28:35.406Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c270f5a57b8543be7d7bbe"
+  },
+  "name": "LifeCare Solutions",
+  "category": "Health",
+  "location": "Calle de la Salud 25, Distrito Médico",
+  "creation": 2015,
+  "impact": "MEDIUM",
+  "yearsInBusiness": 10,
+  "createdAt": {
+    "$date": "2025-03-01T02:29:09.577Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:29:09.577Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c270ffa57b8543be7d7bc2"
+  },
+  "name": "RenewPower Energy",
+  "category": "Energy",
+  "location": "Calle Energía 10, EcoCity",
+  "creation": 2013,
+  "impact": "HIGH",
+  "yearsInBusiness": 12,
+  "createdAt": {
+    "$date": "2025-03-01T02:29:19.092Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:29:19.092Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27127a57b8543be7d7bcc"
+  },
+  "name": "SolarWave Solutions",
+  "category": "Energy",
+  "location": "Avenida Solar 27, Ciudad Verde",
+  "creation": 2017,
+  "impact": "MEDIUM",
+  "yearsInBusiness": 8,
+  "createdAt": {
+    "$date": "2025-03-01T02:29:59.702Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:29:59.702Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27131a57b8543be7d7bd0"
+  },
+  "name": "FutureMobility Transport",
+  "category": "Transportation",
+  "location": "Calle Movilidad 56, Zona de Transporte",
+  "creation": 2018,
+  "impact": "HIGH",
+  "yearsInBusiness": 7,
+  "createdAt": {
+    "$date": "2025-03-01T02:30:09.153Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:30:09.153Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27137a57b8543be7d7bd4"
+  },
+  "name": "CityRide Systems",
+  "category": "Transportation",
+  "location": "Avenida Rápida 34, Ciudad Centro",
+  "creation": 2020,
+  "impact": "LOW",
+  "yearsInBusiness": 5,
+  "createdAt": {
+    "$date": "2025-03-01T02:30:15.013Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:30:15.013Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27142a57b8543be7d7bd8"
+  },
+  "name": "CapitalHub Financial",
+  "category": "Finance",
+  "location": "Calle de la Bolsa 23, Distrito Financiero",
+  "creation": 2009,
+  "impact": "HIGH",
+  "yearsInBusiness": 16,
+  "createdAt": {
+    "$date": "2025-03-01T02:30:26.088Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:30:26.088Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c27159a57b8543be7d7bdc"
+  },
+  "name": "SafeNet Financial Group",
+  "category": "Finance",
+  "location": "Avenida Seguridad 67, Sector Banca",
+  "creation": 2016,
+  "impact": "LOW",
+  "yearsInBusiness": 9,
+  "createdAt": {
+    "$date": "2025-03-01T02:30:49.422Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T02:30:49.422Z"
+  }
+}]
