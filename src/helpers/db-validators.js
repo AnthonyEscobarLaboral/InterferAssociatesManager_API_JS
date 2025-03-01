@@ -37,6 +37,13 @@ export const companyFound = async (name = "") => {
     }
 }
 
+export const companyExists = async (cid = " ") => {
+    const exists = await Company.findById(cid)
+    if(!exists){
+        throw new Error(`The id of company provided does not exists nor it could be found`)
+    }
+}
+
 export const impactFound = async (impact = "") => {
     const found = await Company.findOne({impact})
     if(!found){

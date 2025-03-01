@@ -98,3 +98,33 @@ export const companiesReportGenerator = async (req, res) => {
         });
     }
 };
+
+export const editCompany = async (req, res) => {
+    try {
+        const { cid } = req.params;
+        const editionYear = new Date().getFullYear();
+        const companyReceived = req.body;
+
+        if (typeof companyReceived.creation !== 'number' || companyReceived.creation < 1850 || companyReceived.creation >= editionYear) {
+            return res.status(400).json({
+                success: false,
+                message: "creation year of the company needs to be a number & a valid year"
+            });
+        };
+
+        companyReceived.yearsInBusiness = (editionYear - companyReceived.creation)
+
+        const companyUpdated = await Company.findByIdAndUpdate(cid, companyReceived, { new: true });
+
+
+        return res.status(201).json({
+            message: "Company updated successfully",
+            companyUpdated
+        });
+    } catch (err) {
+        return res.status(500).json({
+            message: "Company information update failed",
+            error: err.message
+        });
+    }
+};

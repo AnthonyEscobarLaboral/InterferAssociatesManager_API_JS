@@ -1,5 +1,5 @@
 import { body, param } from "express-validator";
-import { companyFound,impactFound,categoryFound,yearsFound } from "../helpers/db-validators.js";
+import { companyFound,impactFound,categoryFound,yearsFound,companyExists } from "../helpers/db-validators.js";
 import { validarCampos } from "./validate-fields.js";
 import { handleErrors } from "./handle-errors.js";
 import { validateJWT } from "./validate-jwt.js";
@@ -21,6 +21,19 @@ export const companiesReportGeneratorValidator = [
     body("impact").optional().custom(impactFound),
     body("category").optional().custom(categoryFound),
     body("yearsInBusiness").optional().custom(yearsFound),
+    validarCampos,
+    handleErrors
+]
+
+export const editCompanyValidator = [
+    validateJWT,
+    param("cid").isMongoId().withMessage("The id provided is not vali"),
+    param("cid").custom(companyExists),
+    body("name").optional().custom(companyFound),
+    body("location").optional(),
+    body("impact").optional().custom(impactFound),
+    body("category").optional().custom(categoryFound),
+    body("creation").optional(),
     validarCampos,
     handleErrors
 ]
